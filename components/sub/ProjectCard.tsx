@@ -5,9 +5,10 @@ interface Props {
   src: string;
   title: string;
   description: string;
+  stack: string;
 }
 
-const ProjectCard = ({ src, title, description }: Props) => {
+const ProjectCard = ({ src, title, description, stack }: Props) => {
   return (
     <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
       <Image
@@ -20,7 +21,7 @@ const ProjectCard = ({ src, title, description }: Props) => {
 
       <div className="relative p-4">
         <h1 className="text-2xl font-semibold text-white">{title}</h1>
-        <p className="mt-2 text-gray-300">{description}</p>
+        <p className="mt-2 text-gray-300">{description} <br/><br/> {stack}</p>
       </div>
     </div>
   );

@@ -12,19 +12,22 @@ const Projects = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/netflix.png"
+          title="Video streaming application"
+          description="Redesign of the netflix site presenting the Content Catalog"
+          stack="React.Js, Tailwind CSS, Node.Js, TMDB api"
         />
         <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
+          src="/ecom.png"
+          title="Online sales web application"
+          description = "Development of an e-commerce site selling flowers and plants"
+          stack="React.Js, Tailwind CSS, Node.Js"
+          />
         <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/airbnb.png"
+          title="Rental apart web application"
+          description="Redesign of the AIRBNB site presenting the Content Catalog"
+          stack="HTML, CSS, PHP, MySql"
         />
       </div>
     </div>
