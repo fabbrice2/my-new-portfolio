@@ -1,9 +1,20 @@
+"use client";
+
 import { Socials } from "@/constants";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { SlMenu } from "react-icons/sl";
 
+
 const Navbar = () => {
+
+  
+  const [selectedItem, setSelectedItem] = useState('About me');
+
+  const handleItemClick = (item: string) => {
+    setSelectedItem(item);
+  };
+
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-5 sm:px-10 md:px-15 lg:px-20  ">
       <div className="w-full h-full flex flex-row items-center justify-between">
@@ -48,13 +59,38 @@ const Navbar = () => {
           ))}
         </div>
         <div className="flex md:hidden">
-        <Image
-            src="/menu.svg"
-            alt="logo"
-            width={30}
-            height={30}
-            className="cursor-pointer hover:animate-slowspin h-[30px] w-[30px]"
-          />
+          <ul className="flex gap-4">
+            <li
+              onClick={() => handleItemClick("About me")}
+              className={
+                selectedItem === "About me"
+                  ? "text-white cursor-pointer transition-colors"
+                  : "text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 cursor-pointer transition-colors"
+              }
+            >
+              About me
+            </li>
+            <li
+              onClick={() => handleItemClick("Skills")}
+              className={
+                selectedItem === "Skills"
+                  ? "text-white cursor-pointer transition-colors"
+                  : "text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 cursor-pointer transition-colors"
+              }
+            >
+              Skills
+            </li>
+            <li
+              onClick={() => handleItemClick("Projets")}
+              className={
+                selectedItem === "Projets"
+                  ? "text-white cursor-pointer transition-colors"
+                  : "text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 cursor-pointer transition-colors"
+              }
+            >
+              Projets
+            </li>
+          </ul>
         </div>
       </div>
     </div>
