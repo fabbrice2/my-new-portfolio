@@ -89,7 +89,7 @@ export const Socials = [
   {
     name: "Instagram",
     src: "/instagram.svg",
-    href: "https://github.com/fabbrice2",
+    href: "https://drive.google.com/file/d/14w7tyLoBPjcOwgp8hr3kxMS1_UWnKnVH/view",
   },
   {
     name: "Linkedin",
