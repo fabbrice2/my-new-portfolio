@@ -60,7 +60,7 @@ const Navbar = () => {
         </div>
         <div className="flex md:hidden">
           <ul className="flex gap-4">
-            <li
+          <a href="#about-me"><li
               onClick={() => handleItemClick("About me")}
               className={
                 selectedItem === "About me"
@@ -69,8 +69,8 @@ const Navbar = () => {
               }
             >
               About me
-            </li>
-            <li
+            </li></a>
+            <a href="#skills"><li
               onClick={() => handleItemClick("Skills")}
               className={
                 selectedItem === "Skills"
@@ -79,8 +79,8 @@ const Navbar = () => {
               }
             >
               Skills
-            </li>
-            <li
+            </li></a>
+            <a href="#projects"><li
               onClick={() => handleItemClick("Projets")}
               className={
                 selectedItem === "Projets"
@@ -89,7 +89,7 @@ const Navbar = () => {
               }
             >
               Projets
-            </li>
+            </li></a>
           </ul>
         </div>
       </div>
