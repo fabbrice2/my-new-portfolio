@@ -10,28 +10,28 @@ const Footer = () => {
         <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">Find me</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+            <a href="https://github.com/fabbrice2" className="flex flex-row items-center my-[15px] cursor-pointer relative z-[50]">
               <RxGithubLogo />
               <span className="text-[15px] ml-[6px]">Github</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+            </a>
+            <a className="flex flex-row items-center my-[15px] cursor-pointer relative z-[50]">
               <RxDiscordLogo />
               <span className="text-[15px] ml-[6px]">Discord</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-            <FaLinkedinIn />
+            </a>
+            <a href="https://www.linkedin.com/in/fabrice-amenouglo-210908248/" className="flex flex-row items-center my-[15px] cursor-pointer relative z-[50]">
+              <FaLinkedinIn />
               <span className="text-[15px] ml-[6px]">Linkedin</span>
-            </p>
+            </a>
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">Contact</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+            <p className="flex flex-row items-center my-[15px] cursor-pointer relative z-[50]">
               <span className="text-[15px] ml-[6px]">06 61 87 50 92</span>
             </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+            <p className="flex flex-row items-center my-[15px] cursor-pointer relative z-[50]">
               <span className="text-[15px] ml-[6px]">y_amenouglo@hetic.eu</span>
             </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+            <p className="flex flex-row items-center my-[15px] cursor-pointer relative z-[50]">
               <span className="text-[15px] ml-[6px]">
                 fabriceamenouglo@gmail.com
               </span>

@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-5 sm:px-10 md:px-15 lg:px-20  ">
+    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-[999] px-5 sm:px-10 md:px-15 lg:px-20  ">
       <div className="w-full h-full flex flex-row items-center justify-between">
         <a href="#about-me" className="flex flex-row items-center">
           <Image
